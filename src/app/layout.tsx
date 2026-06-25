@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   title: "Veilpeak — Premium Alpine Equipment",
   description:
     "Engineered for the unknown. Premium alpine gear built for those who push beyond the ordinary.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default async function RootLayout({
