@@ -18,7 +18,7 @@ export default function ExpeditionsPage() {
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            transition={{ duration: 0.6, ease: "easeOut" as const }}
             className="text-green-300/70 text-xs tracking-widest uppercase mb-4"
           >
             {t("eyebrow")}
@@ -27,7 +27,7 @@ export default function ExpeditionsPage() {
           <motion.h1
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.65, ease: "easeOut", delay: 0.1 }}
+            transition={{ duration: 0.65, ease: "easeOut" as const, delay: 0.1 }}
             className="text-5xl md:text-6xl font-light tracking-tight text-white leading-[1.08] mb-8"
           >
             {t("headline")}
@@ -36,7 +36,7 @@ export default function ExpeditionsPage() {
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+            transition={{ duration: 0.6, ease: "easeOut" as const, delay: 0.2 }}
             className="space-y-5"
           >
             <p className="text-white/50 text-base leading-relaxed font-light">{t("p1")}</p>
@@ -46,7 +46,7 @@ export default function ExpeditionsPage() {
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.35 }}
+            transition={{ duration: 0.6, ease: "easeOut" as const, delay: 0.35 }}
             className="mt-12 inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/[0.03]"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-green-300/60 animate-pulse" />
@@ -58,7 +58,7 @@ export default function ExpeditionsPage() {
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.45 }}
+            transition={{ duration: 0.6, ease: "easeOut" as const, delay: 0.45 }}
             className="mt-8 flex items-center gap-4"
           >
             <Link

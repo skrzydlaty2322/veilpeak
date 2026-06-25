@@ -61,7 +61,7 @@ const containerVariants: Variants = {
 
 const cardVariants: Variants = {
   hidden: { opacity: 0, y: 24 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.55, ease: "easeOut" } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.55, ease: "easeOut" as const } },
 };
 
 export default function ManifestoSection() {
@@ -107,7 +107,7 @@ export default function ManifestoSection() {
               initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
+              transition={{ duration: 0.5, ease: "easeOut" as const }}
               className="text-green-300/70 text-xs tracking-widest uppercase mb-3"
             >
               {t("label")}
@@ -126,7 +126,7 @@ export default function ManifestoSection() {
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+            transition={{ duration: 0.6, ease: "easeOut" as const, delay: 0.2 }}
             className="text-white/35 text-sm leading-relaxed font-light max-w-xs lg:max-w-72 lg:text-right"
           >
             {t("desc")}
@@ -141,7 +141,7 @@ export default function ManifestoSection() {
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-60px" }}
-            transition={{ duration: 0.75, ease: "easeOut" }}
+            transition={{ duration: 0.75, ease: "easeOut" as const }}
             className="relative min-h-[460px] lg:min-h-[600px] rounded-3xl overflow-hidden bg-[#0d150f] group cursor-pointer"
           >
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_70%_at_50%_80%,rgba(134,239,172,0.07)_0%,transparent_65%)]" />
@@ -183,7 +183,7 @@ export default function ManifestoSection() {
               initial={{ opacity: 0, x: 60 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
+              transition={{ duration: 0.7, ease: "easeOut" as const, delay: 0.1 }}
               className="flex-1 rounded-3xl bg-[#0d150f] border border-white/5 p-8 flex flex-col justify-between min-h-[270px]"
             >
               <div>
@@ -225,7 +225,7 @@ export default function ManifestoSection() {
               initial={{ opacity: 0, x: 60 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+              transition={{ duration: 0.7, ease: "easeOut" as const, delay: 0.2 }}
               className="flex-1 relative rounded-3xl overflow-hidden bg-[#0d150f] border border-white/5 min-h-[270px]"
             >
               <Image
@@ -320,7 +320,7 @@ export default function ManifestoSection() {
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.6, ease: "easeOut" as const }}
           className="mt-14 flex flex-col sm:flex-row items-center justify-between gap-6 pt-10 border-t border-white/5"
         >
           <div className="flex items-center gap-3">

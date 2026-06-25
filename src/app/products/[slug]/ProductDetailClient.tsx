@@ -80,7 +80,7 @@ export default function ProductDetailClient({ product }: Props) {
             <motion.div
               initial={{ opacity: 0, x: -24 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
+              transition={{ duration: 0.6, ease: "easeOut" as const }}
               className="relative aspect-square bg-[#141e16] rounded-2xl overflow-hidden"
             >
               {product.image_url && (
@@ -103,7 +103,7 @@ export default function ProductDetailClient({ product }: Props) {
             <motion.div
               initial={{ opacity: 0, x: 24 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
+              transition={{ duration: 0.6, ease: "easeOut" as const, delay: 0.1 }}
               className="flex flex-col justify-center pt-2 lg:pt-10"
             >
               <p className="text-green-300/70 text-xs tracking-widest uppercase mb-3">

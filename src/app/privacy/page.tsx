@@ -18,7 +18,7 @@ export default function PrivacyPage() {
         <motion.p
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.6, ease: "easeOut" as const }}
           className="text-green-300/70 text-xs tracking-widest uppercase mb-4"
         >
           {t("eyebrow")}
@@ -27,7 +27,7 @@ export default function PrivacyPage() {
         <motion.h1
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.65, ease: "easeOut", delay: 0.1 }}
+          transition={{ duration: 0.65, ease: "easeOut" as const, delay: 0.1 }}
           className="text-5xl md:text-6xl font-light tracking-tight text-white leading-[1.08] mb-12"
         >
           {t("headline")}
@@ -36,7 +36,7 @@ export default function PrivacyPage() {
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          transition={{ duration: 0.6, ease: "easeOut" as const, delay: 0.2 }}
           className="space-y-10"
         >
           {Array.from({ length: SECTION_COUNT }, (_, i) => (

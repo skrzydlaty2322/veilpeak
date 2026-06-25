@@ -47,7 +47,7 @@ export default function FullSetSection() {
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.75, ease: "easeOut" }}
+            transition={{ duration: 0.75, ease: "easeOut" as const }}
             className="relative"
           >
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden bg-[#0d150f]">
@@ -74,14 +74,14 @@ export default function FullSetSection() {
             initial={{ opacity: 0, x: 60 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.75, ease: "easeOut", delay: 0.1 }}
+            transition={{ duration: 0.75, ease: "easeOut" as const, delay: 0.1 }}
             className="flex flex-col"
           >
             <motion.p
               initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
+              transition={{ duration: 0.5, ease: "easeOut" as const }}
               className="text-green-300/70 text-xs tracking-widest uppercase mb-3"
             >
               {t("label")}
@@ -103,7 +103,7 @@ export default function FullSetSection() {
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, margin: "-40px" }}
-                  transition={{ duration: 0.45, ease: "easeOut", delay: 0.05 * i }}
+                  transition={{ duration: 0.45, ease: "easeOut" as const, delay: 0.05 * i }}
                   className="flex items-start gap-3"
                 >
                   <CheckIcon />

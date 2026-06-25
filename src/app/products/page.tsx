@@ -48,7 +48,7 @@ export default function ProductsPage() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            transition={{ duration: 0.6, ease: "easeOut" as const }}
             className="mb-14"
           >
             <p className="text-green-300/70 text-xs tracking-widest uppercase mb-3">
@@ -65,7 +65,7 @@ export default function ProductsPage() {
           <motion.div
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+            transition={{ duration: 0.6, ease: "easeOut" as const, delay: 0.2 }}
             className="origin-left h-px bg-white/5 mb-12"
           />
 

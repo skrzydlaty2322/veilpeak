@@ -42,7 +42,7 @@ export default function ProductCard({
   return (
     <motion.div
       whileHover={{ y: -4, scale: 1.025, boxShadow: "0 0 0 1px rgba(134,239,172,0.12), 0 8px 40px rgba(134,239,172,0.08)" }}
-      transition={{ duration: 0.25, ease: "easeOut" }}
+      transition={{ duration: 0.25, ease: "easeOut" as const }}
       className="group relative flex flex-col bg-[#0d150f] border border-white/5 rounded-2xl overflow-hidden cursor-pointer"
     >
       <Link

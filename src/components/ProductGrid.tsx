@@ -45,7 +45,7 @@ export default function ProductGrid() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.6, ease: "easeOut" as const }}
           className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12"
         >
           <div>

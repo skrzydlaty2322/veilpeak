@@ -24,7 +24,7 @@ export default function ContactPage() {
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
+            transition={{ duration: 0.6, ease: "easeOut" as const }}
             className="text-green-300/70 text-xs tracking-widest uppercase mb-4"
           >
             {t("eyebrow")}
@@ -33,7 +33,7 @@ export default function ContactPage() {
           <motion.h1
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.65, ease: "easeOut", delay: 0.1 }}
+            transition={{ duration: 0.65, ease: "easeOut" as const, delay: 0.1 }}
             className="text-5xl md:text-6xl font-light tracking-tight text-white leading-[1.08] mb-4"
           >
             {t("headline")}
@@ -42,7 +42,7 @@ export default function ContactPage() {
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+            transition={{ duration: 0.6, ease: "easeOut" as const, delay: 0.2 }}
             className="text-white/40 text-sm font-light mb-10"
           >
             {t("emailNote")}{" "}
@@ -59,7 +59,7 @@ export default function ContactPage() {
             <motion.div
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
+              transition={{ duration: 0.5, ease: "easeOut" as const }}
               className="rounded-2xl border border-green-300/20 bg-green-300/5 p-8 text-center"
             >
               <p className="text-green-300 text-sm font-medium mb-1">{t("successTitle")}</p>
@@ -69,7 +69,7 @@ export default function ContactPage() {
             <motion.form
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
+              transition={{ duration: 0.6, ease: "easeOut" as const, delay: 0.3 }}
               onSubmit={handleSubmit}
               className="space-y-4"
             >

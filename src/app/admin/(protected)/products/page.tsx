@@ -272,7 +272,7 @@ export default function AdminProductsPage() {
               initial={{ opacity: 0, scale: 0.97, y: 8 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.97, y: 8 }}
-              transition={{ duration: 0.2, ease: "easeOut" }}
+              transition={{ duration: 0.2, ease: "easeOut" as const }}
               className="fixed inset-0 z-50 flex items-center justify-center p-4"
             >
               <div className="w-full max-w-lg bg-[#0d150f] border border-white/[0.08] rounded-2xl p-6 shadow-2xl">

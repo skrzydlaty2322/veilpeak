@@ -17,7 +17,7 @@ const containerVariants: Variants = {
 
 const cardVariants: Variants = {
   hidden: { opacity: 0, x: -50 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.65, ease: "easeOut" } },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.65, ease: "easeOut" as const } },
 };
 
 export default function TestimonialsSection() {
@@ -46,7 +46,7 @@ export default function TestimonialsSection() {
               initial={{ opacity: 0, y: 12 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
+              transition={{ duration: 0.5, ease: "easeOut" as const }}
               className="text-green-300/70 text-xs tracking-widest uppercase mb-3"
             >
               {t("label")}
@@ -65,7 +65,7 @@ export default function TestimonialsSection() {
             initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+            transition={{ duration: 0.6, ease: "easeOut" as const, delay: 0.2 }}
             className="text-white/35 text-sm leading-relaxed font-light max-w-xs lg:max-w-72 lg:text-right"
           >
             {t("desc")}
